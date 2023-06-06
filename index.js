@@ -11,7 +11,9 @@ class Index {
   }
 
   listenApp() {
-    this.server.listen(2000);
+    this.server.listen(2000, () => {
+      console.log("listeningbeta");
+    });
   }
 
   middlewares(url) {
